@@ -3,7 +3,7 @@
 * @Author: oscar84922tw
 * @Date:   2016-04-15 10:38:07
 * @Last Modified by:   oscar84922tw
-* @Last Modified time: 2016-04-23 17:48:54
+* @Last Modified time: 2016-04-23 22:24:25
 */
 
 /* global */
@@ -40,7 +40,7 @@ color:#AAA;
 }
 
 /* 991px */
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
     #wrapper{
       max-width: 991px;
       margin: 50px auto;
@@ -98,7 +98,7 @@ color:#AAA;
       z-index: 10;
       position: relative;
       float: right;
-      bottom: 80px;
+      bottom: 230px;
       background-color: #fff;
       font-size: 2.2rem;
       line-height: 30px;
@@ -113,7 +113,7 @@ color:#AAA;
     #titleB {
       float: right;
       left: 30px;
-      bottom: 80px;
+      bottom: 230px;
       position: relative;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -124,10 +124,13 @@ color:#AAA;
       line-height:30px;
       text-align:right;
       left: 0;
+      color: #fff;
     }
 
 
     .option {
+      position: relative;
+      bottom: 180px;
       padding-right: 0.5px green solid;
       width: 25%;
       float: left;
@@ -155,6 +158,8 @@ color:#AAA;
     }
 
     .arti-with-pic{
+      position: relative;
+      bottom: 180px;
       float:left;
       width: 25%;
       padding-right: 5px;
@@ -203,7 +208,7 @@ color:#AAA;
       z-index: 10;
       position: relative;
       float: right;
-      bottom: 80px;
+      bottom: 230px;
       background-color: #fff;
       font-size: 2.2rem;
       line-height: 30px;
@@ -218,7 +223,7 @@ color:#AAA;
     #titleB {
       float: right;
       left: 30px;
-      bottom: 80px;
+      bottom: 230px;
       position: relative;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -229,23 +234,27 @@ color:#AAA;
       line-height:30px;
       text-align:right;
       left: 0;
+      color: #fff;
     }
 
 
     .option {
+      position: relative;
       padding-right: 0.5px green solid;
       width: 25%;
       float: left;
       text-align: center;
     }
 
-    .title_img{
-      height: 445px;
+    #archives{
+      position: relative;
+      bottom: 170px;
     }
 
 
-
     #nd-nav{
+      position: relative;
+      bottom: 170px;
       text-align: center;
       margin-top: 0px;
       display: inline;
@@ -273,23 +282,238 @@ color:#AAA;
 
 /* 橫向智慧手機到竪立平板電腦解析度 */
 @media (max-width: 767px) {
+   #wrapper{
+      max-width: 480px;
+      margin: 20px auto;
 
+    }
+
+    #main{
+      max-width:667.906px;
+      margin:auto;
+      float: left;
+    }
+
+
+
+    .icon {
+      z-index: 10;
+      position: relative;
+      width: 60px;
+    float: left;
+      /*margin-left: px;*/
+    }
+
+    .icon img{
+      vertical-align: middle;
+    }
+
+    .nav {
+      left: 80px;
+      float: left;
+      font-size: 1.7rem;
+      position: relative;
+      left: 17px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .nav li{
+      font-size: 1.4rem;
+      display: inline;
+      margin:0px 10px 0px 0px;
+    }
+
+    aside{
+      display: none;
+    }
+
+    aside h5{
+      text-transform:uppercase;
+      font-size: 1rem;
+    }
+    aside p {
+      margin-right: 100px;
+      font-size: 0.8rem;
+    }
+
+    .title_img img{
+      height:248px;
+      width:100%;
+      position: relative;
+      display:block;
+      margin: 0;
+    }
+
+    #titleA {
+      z-index: 10;
+      width: 100%;
+      position: relative;
+      float: left;
+      bottom: 80px;
+      background-color: #fff;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    #titleB {
+      color: #fff;
+      width: 100%;
+      float: left;
+      bottom: 80px;
+      position: relative;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+      background: #000;
+      font-size:1rem;
+      line-height:1rem;
+    }
+
+
+    .option {
+      display: none;
+    }
+
+
+
+   .arti-with-pic .img img{
+      width: 50%;
+      height: auto;
+      position: relative;
+    }
+
+    .arti-with-pic{
+      position: relative;
+      bottom: 70px;
+      float:left;
+      width: 50%;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
 }
 
 /* 橫向智慧手機及其他更小解析度 */
 @media (max-width: 480px) {
-  #wrapper{
-    width: 350px;
-    padding-top:10px;
-  }
-  .nav{
-font-size:1.4rem;
 
-  }
-  .icon {
-    width: 60px;
-    float: left;
-    /*margin-left: 10px;*/
-    margin:0px auto;
-  }
+   #wrapper{
+      max-width: 350px;
+      margin: 10px auto;
+
+    }
+
+    #main{
+      max-width:667.906px;
+      margin:auto;
+      float: left;
+    }
+
+
+
+    .icon {
+      right: -35%;
+      z-index: 10;
+      position: relative;
+      top: 50px;
+      width: 60px;
+
+      /*margin-left: px;*/
+    }
+
+    .icon img{
+      vertical-align: middle;
+    }
+
+    .nav {
+      font-size: 1.7rem;
+      margin: 0px auto;
+      position: relative;
+      bottom: 40px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .nav li{
+      font-size: 1.4rem;
+      display: inline;
+      margin:0px 10px 0px 0px;
+    }
+
+    aside{
+      display: none;
+    }
+
+    aside h5{
+      text-transform:uppercase;
+      font-size: 1rem;
+    }
+    aside p {
+      margin-right: 100px;
+      font-size: 0.8rem;
+    }
+
+    .title_img img{
+      height:248px;
+      width: auto;
+      position: relative;
+      display:block;
+      margin: 0;
+    }
+
+    #titleA {
+      z-index: 10;
+      width: 100%;
+      position: relative;
+      float: left;
+      bottom: 80px;
+      background-color: #fff;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    #titleB {
+      color: #fff;
+      width: 100%;
+      float: left;
+      bottom: 80px;
+      position: relative;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+      background: #000;
+      font-size:1rem;
+      line-height:1rem;
+    }
+
+
+    .option {
+      display: none;
+    }
+
+
+
+   .arti-with-pic .img img{
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    .arti-with-pic{
+      position: relative;
+      bottom: 70px;
+      float:left;
+      width: 100%;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
 }
